@@ -20,6 +20,7 @@
 		E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A5E2BAA929F0032EE1E /* MarvelViewModel.swift */; };
 		E0783A672BAAAA150032EE1E /* BoardGameSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */; };
 		E0783A6E2BAAAAC00032EE1E /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */; };
+		E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A702BAAD74B0032EE1E /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E0783A642BAAAA150032EE1E /* BoardGameSupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGameSupportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameSupportTests.swift; sourceTree = "<group>"; };
 		E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
+		E0783A702BAAD74B0032EE1E /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		E0783A362BA820CA0032EE1E /* BoardGameSupport */ = {
 			isa = PBXGroup;
 			children = (
+				E0783A6F2BAAD72D0032EE1E /* Protocol */,
 				E0783A572BAA88910032EE1E /* ViewModel */,
 				E0783A562BAA88860032EE1E /* View */,
 				E0783A372BA820CA0032EE1E /* AppDelegate.swift */,
@@ -139,6 +142,14 @@
 				E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */,
 			);
 			path = BoardGameSupportTests;
+			sourceTree = "<group>";
+		};
+		E0783A6F2BAAD72D0032EE1E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E0783A702BAAD74B0032EE1E /* ViewModelType.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EA5DB7D70AAFC57F288C2A3E /* Frameworks */ = {
@@ -312,6 +323,7 @@
 				E0783A5D2BAA92910032EE1E /* MarvelViewController.swift in Sources */,
 				E0783A5B2BAA90AE0032EE1E /* HomeViewModel.swift in Sources */,
 				E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */,
+				E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
