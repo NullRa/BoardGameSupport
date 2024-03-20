@@ -21,6 +21,7 @@
 		E0783A672BAAAA150032EE1E /* BoardGameSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */; };
 		E0783A6E2BAAAAC00032EE1E /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */; };
 		E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A702BAAD74B0032EE1E /* ViewModelType.swift */; };
+		E0783A732BAADD620032EE1E /* AbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A722BAADD620032EE1E /* AbsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameSupportTests.swift; sourceTree = "<group>"; };
 		E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		E0783A702BAAD74B0032EE1E /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		E0783A722BAADD620032EE1E /* AbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				E0783A582BAA88DD0032EE1E /* HomeViewController.swift */,
 				E0783A5C2BAA92900032EE1E /* MarvelViewController.swift */,
+				E0783A722BAADD620032EE1E /* AbsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				E0783A5B2BAA90AE0032EE1E /* HomeViewModel.swift in Sources */,
 				E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */,
 				E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */,
+				E0783A732BAADD620032EE1E /* AbsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,16 +12,30 @@ class HomeViewModel: ViewModelType {
     
     private let disposeBag = DisposeBag()
     
-    struct Input {}
+    struct Input {
+        let tapMarvelBtn: AnyObserver<Void>
+    }
     
     struct Output {}
     
     let input: Input
-    
     let output: Output
     
+    private let tapMarvelBtnSub = PublishSubject<Void>()
+    
     init() {
-        self.input = Input()
+        self.input = Input(
+            tapMarvelBtn: tapMarvelBtnSub.asObserver()
+        )
         self.output = Output()
+        self.binding()
+    }
+    
+    private func binding() {
+        tapMarvelBtnSub
+            .subscribe(onNext: { _ in
+                print("test")
+            })
+            .disposed(by: disposeBag)
     }
 }
