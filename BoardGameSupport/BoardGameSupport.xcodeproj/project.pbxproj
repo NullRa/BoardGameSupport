@@ -10,11 +10,11 @@
 		5A8D8E718F80BEEBC264CACD /* Pods_BoardGameSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5733C6885F0D806524B2760E /* Pods_BoardGameSupport.framework */; };
 		E0783A382BA820CA0032EE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A372BA820CA0032EE1E /* AppDelegate.swift */; };
 		E0783A3A2BA820CA0032EE1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A392BA820CA0032EE1E /* SceneDelegate.swift */; };
-		E0783A3C2BA820CA0032EE1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A3B2BA820CA0032EE1E /* ViewController.swift */; };
 		E0783A3F2BA820CA0032EE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0783A3D2BA820CA0032EE1E /* Main.storyboard */; };
 		E0783A412BA820CC0032EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0783A402BA820CC0032EE1E /* Assets.xcassets */; };
 		E0783A442BA820CC0032EE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0783A422BA820CC0032EE1E /* LaunchScreen.storyboard */; };
 		E0783A512BA830C60032EE1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0783A532BA830C60032EE1E /* Localizable.strings */; };
+		E0783A592BAA88DD0032EE1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A582BAA88DD0032EE1E /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,6 @@
 		E0783A342BA820CA0032EE1E /* BoardGameSupport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGameSupport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0783A372BA820CA0032EE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0783A392BA820CA0032EE1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0783A3B2BA820CA0032EE1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0783A3E2BA820CA0032EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0783A402BA820CC0032EE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0783A432BA820CC0032EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		E0783A522BA830C60032EE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E0783A542BA830C80032EE1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E0783A552BA830CC0032EE1E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E0783A582BAA88DD0032EE1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +71,10 @@
 		E0783A362BA820CA0032EE1E /* BoardGameSupport */ = {
 			isa = PBXGroup;
 			children = (
+				E0783A572BAA88910032EE1E /* ViewModel */,
+				E0783A562BAA88860032EE1E /* View */,
 				E0783A372BA820CA0032EE1E /* AppDelegate.swift */,
 				E0783A392BA820CA0032EE1E /* SceneDelegate.swift */,
-				E0783A3B2BA820CA0032EE1E /* ViewController.swift */,
 				E0783A532BA830C60032EE1E /* Localizable.strings */,
 				E0783A3D2BA820CA0032EE1E /* Main.storyboard */,
 				E0783A402BA820CC0032EE1E /* Assets.xcassets */,
@@ -81,6 +82,21 @@
 				E0783A452BA820CC0032EE1E /* Info.plist */,
 			);
 			path = BoardGameSupport;
+			sourceTree = "<group>";
+		};
+		E0783A562BAA88860032EE1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0783A582BAA88DD0032EE1E /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0783A572BAA88910032EE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EA5DB7D70AAFC57F288C2A3E /* Frameworks */ = {
@@ -218,9 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0783A3C2BA820CA0032EE1E /* ViewController.swift in Sources */,
 				E0783A382BA820CA0032EE1E /* AppDelegate.swift in Sources */,
 				E0783A3A2BA820CA0032EE1E /* SceneDelegate.swift in Sources */,
+				E0783A592BAA88DD0032EE1E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
