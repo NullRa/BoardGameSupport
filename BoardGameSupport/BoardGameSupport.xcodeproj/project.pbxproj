@@ -15,6 +15,9 @@
 		E0783A442BA820CC0032EE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0783A422BA820CC0032EE1E /* LaunchScreen.storyboard */; };
 		E0783A512BA830C60032EE1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0783A532BA830C60032EE1E /* Localizable.strings */; };
 		E0783A592BAA88DD0032EE1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A582BAA88DD0032EE1E /* HomeViewController.swift */; };
+		E0783A5B2BAA90AE0032EE1E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A5A2BAA90AE0032EE1E /* HomeViewModel.swift */; };
+		E0783A5D2BAA92910032EE1E /* MarvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A5C2BAA92900032EE1E /* MarvelViewController.swift */; };
+		E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A5E2BAA929F0032EE1E /* MarvelViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E0783A542BA830C80032EE1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E0783A552BA830CC0032EE1E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E0783A582BAA88DD0032EE1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E0783A5A2BAA90AE0032EE1E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E0783A5C2BAA92900032EE1E /* MarvelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewController.swift; sourceTree = "<group>"; };
+		E0783A5E2BAA929F0032EE1E /* MarvelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E0783A582BAA88DD0032EE1E /* HomeViewController.swift */,
+				E0783A5C2BAA92900032EE1E /* MarvelViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 		E0783A572BAA88910032EE1E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E0783A5A2BAA90AE0032EE1E /* HomeViewModel.swift */,
+				E0783A5E2BAA929F0032EE1E /* MarvelViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -237,6 +246,9 @@
 				E0783A382BA820CA0032EE1E /* AppDelegate.swift in Sources */,
 				E0783A3A2BA820CA0032EE1E /* SceneDelegate.swift in Sources */,
 				E0783A592BAA88DD0032EE1E /* HomeViewController.swift in Sources */,
+				E0783A5D2BAA92910032EE1E /* MarvelViewController.swift in Sources */,
+				E0783A5B2BAA90AE0032EE1E /* HomeViewModel.swift in Sources */,
+				E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
