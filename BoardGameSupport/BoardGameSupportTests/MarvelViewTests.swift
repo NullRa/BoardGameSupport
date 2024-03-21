@@ -20,6 +20,13 @@ final class MarvelViewTests: XCTestCase {
         viewModel = nil
     }
 
+    func testNameDefault() {
+        let index = viewModel.output.index.value
+        let testArray = viewModel.output.testArray.value
+        let testName = testArray[index]
+        XCTAssertNotEqual(testName, nil)
+    }
+    
     func testIndexDefault() {
         let testIndex = viewModel.output.index.value
         XCTAssertEqual(testIndex, 0)
