@@ -19,7 +19,6 @@
 		E0783A5D2BAA92910032EE1E /* MarvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A5C2BAA92900032EE1E /* MarvelViewController.swift */; };
 		E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A5E2BAA929F0032EE1E /* MarvelViewModel.swift */; };
 		E0783A672BAAAA150032EE1E /* BoardGameSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */; };
-		E0783A6E2BAAAAC00032EE1E /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */; };
 		E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A702BAAD74B0032EE1E /* ViewModelType.swift */; };
 		E0783A732BAADD620032EE1E /* AbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A722BAADD620032EE1E /* AbsViewController.swift */; };
 		E0783A772BAC28E00032EE1E /* MarvelViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A762BAC28E00032EE1E /* MarvelViewTests.swift */; };
@@ -59,7 +58,6 @@
 		E0783A5E2BAA929F0032EE1E /* MarvelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewModel.swift; sourceTree = "<group>"; };
 		E0783A642BAAAA150032EE1E /* BoardGameSupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGameSupportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameSupportTests.swift; sourceTree = "<group>"; };
-		E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		E0783A702BAAD74B0032EE1E /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		E0783A722BAADD620032EE1E /* AbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsViewController.swift; sourceTree = "<group>"; };
 		E0783A762BAC28E00032EE1E /* MarvelViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewTests.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				E0783A662BAAAA150032EE1E /* BoardGameSupportTests.swift */,
-				E0783A6D2BAAAAC00032EE1E /* HomeTests.swift */,
 				E0783A762BAC28E00032EE1E /* MarvelViewTests.swift */,
 			);
 			path = BoardGameSupportTests;
@@ -338,7 +335,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0783A6E2BAAAAC00032EE1E /* HomeTests.swift in Sources */,
 				E0783A772BAC28E00032EE1E /* MarvelViewTests.swift in Sources */,
 				E0783A672BAAAA150032EE1E /* BoardGameSupportTests.swift in Sources */,
 			);
