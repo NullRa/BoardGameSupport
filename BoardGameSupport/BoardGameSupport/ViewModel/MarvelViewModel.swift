@@ -10,14 +10,14 @@ import RxSwift
 import RxRelay
 
 class MarvelViewModel: ViewModelType {
-    private let testArray = BehaviorRelay<[String]>(value: ["default" ,"test1", "test2", "test3", "test4", "test5", "random"])
+    private let villainList = BehaviorRelay<[String]>(value: ["default" ,"villain1", "villain2", "villain3", "villain4", "villain5", "random"])
     
     private let disposeBag = DisposeBag()
     
     struct Input {}
     
     struct Output {
-        let testArray: BehaviorRelay<[String]>
+        let villainList: BehaviorRelay<[String]>
     }
     
     let input: Input
@@ -27,7 +27,7 @@ class MarvelViewModel: ViewModelType {
     init() {
         self.input = Input()
         self.output = Output(
-            testArray: testArray
+            villainList: villainList
         )
     }
 }
