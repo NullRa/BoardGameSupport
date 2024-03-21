@@ -20,8 +20,6 @@ class HomeViewController: AbsViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func loadUI(){
@@ -41,15 +39,16 @@ class HomeViewController: AbsViewController {
                 guard let self = self else {return}
                 self.viewModel.input.tapMarvelBtn.onNext(())
             }).disposed(by: disposBag)
+        
+        self.viewModel.output.tapMarvelBtnAction
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else {return}
+                self.showMavelVC()
+            }).disposed(by: disposBag)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func showMavelVC(){
+        let vc = MarvelViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    */
-
 }

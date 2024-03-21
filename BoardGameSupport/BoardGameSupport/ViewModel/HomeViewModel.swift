@@ -16,7 +16,9 @@ class HomeViewModel: ViewModelType {
         let tapMarvelBtn: AnyObserver<Void>
     }
     
-    struct Output {}
+    struct Output {
+        let tapMarvelBtnAction: Observable<Void>
+    }
     
     let input: Input
     let output: Output
@@ -27,7 +29,9 @@ class HomeViewModel: ViewModelType {
         self.input = Input(
             tapMarvelBtn: tapMarvelBtnSub.asObserver()
         )
-        self.output = Output()
+        self.output = Output(
+            tapMarvelBtnAction: tapMarvelBtnSub.asObserver()
+        )
         self.binding()
     }
     
