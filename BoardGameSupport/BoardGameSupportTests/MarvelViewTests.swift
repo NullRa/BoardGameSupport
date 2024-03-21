@@ -26,11 +26,6 @@ final class MarvelViewTests: XCTestCase {
         let testName = testArray[index]
         XCTAssertNotEqual(testName, nil)
     }
-    
-    func testIndexDefault() {
-        let testIndex = viewModel.output.index.value
-        XCTAssertEqual(testIndex, 0)
-    }
 }
 
 
