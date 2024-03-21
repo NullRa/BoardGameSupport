@@ -36,10 +36,10 @@ class HomeViewModel: ViewModelType {
     }
     
     private func binding() {
-        tapMarvelBtnSub
-            .subscribe(onNext: { _ in
-                print("test")
-            })
-            .disposed(by: disposeBag)
+//        tapMarvelBtnSub
+//            .subscribe(onNext: { _ in
+//                print("test")
+//            })
+//            .disposed(by: disposeBag)
     }
 }
