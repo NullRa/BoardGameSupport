@@ -6,4 +6,10 @@
   
 */
 
-"CFBundleDisplayName" = "BoardGameSupport";
+"CFBundleDisplayName" = "桌游助手";
+
+///Core Set
+///Villain
+"Rhino" = "犀牛人";
+"Klaw" = "克劳";
+"Ultron" = "奥创";

@@ -7,3 +7,9 @@
 */
 
 "CFBundleDisplayName" = "BoardGameSupport";
+
+///Core Set
+///Villain
+"Rhino" = "Rhino";
+"Klaw" = "Klaw";
+"Ultron" = "Ultron";
