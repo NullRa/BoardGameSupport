@@ -20,10 +20,10 @@ final class MarvelViewTests: XCTestCase {
         viewModel = nil
     }
 
-    func testVillainNameDefault() {
+    func testVillainDefault() {
         let villainList = viewModel.output.villainList.value
-        let villainName = villainList[0]
-        XCTAssertNotEqual(villainName, nil)
+        let villain = villainList[0]
+        XCTAssertNotEqual(villain, nil)
     }
 }
 
