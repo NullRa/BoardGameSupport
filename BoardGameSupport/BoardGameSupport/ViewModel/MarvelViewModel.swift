@@ -10,9 +10,9 @@ import RxSwift
 import RxRelay
 
 class MarvelViewModel: ViewModelType {
-    private let villainList = BehaviorRelay<[String]>(value: ["Rhino", "Klaw", "Ultron", "random"])
+    private let villainList = BehaviorRelay<[String]>(value: ["Rhino", "Klaw", "Ultron", "Random"])
     
-    private let modularSetList = BehaviorRelay<[String]>(value: ["Bomb Scare", "Masters of Evil", "Under Attack", "Legions of Hydra", "The Doomsday Chair", "random"])
+    private let modularSetList = BehaviorRelay<[String]>(value: ["Bomb Scare", "Masters of Evil", "Under Attack", "Legions of Hydra", "The Doomsday Chair", "Random"])
     
     private let disposeBag = DisposeBag()
     
