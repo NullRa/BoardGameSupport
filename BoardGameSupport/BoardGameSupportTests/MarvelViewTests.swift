@@ -20,6 +20,12 @@ final class MarvelViewTests: XCTestCase {
         viewModel = nil
     }
 
+    func testModularSetDefault() {
+        let modularSetList = viewModel.output.modularSetList.value
+        let modularSet = modularSetList[0]
+        XCTAssertNotEqual(modularSet, nil)
+    }
+    
     func testVillainDefault() {
         let villainList = viewModel.output.villainList.value
         let villain = villainList[0]
