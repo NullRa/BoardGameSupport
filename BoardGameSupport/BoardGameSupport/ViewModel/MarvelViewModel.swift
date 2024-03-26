@@ -12,12 +12,15 @@ import RxRelay
 class MarvelViewModel: ViewModelType {
     private let villainList = BehaviorRelay<[String]>(value: ["Rhino", "Klaw", "Ultron", "random"])
     
+    private let modularSetList = BehaviorRelay<[String]>(value: ["Bomb Scare", "Masters of Evil", "Under Attack", "Legions of Hydra", "The Doomsday Chair", "random"])
+    
     private let disposeBag = DisposeBag()
     
     struct Input {}
     
     struct Output {
         let villainList: BehaviorRelay<[String]>
+        let modularSetList: BehaviorRelay<[String]>
     }
     
     let input: Input
@@ -27,7 +30,8 @@ class MarvelViewModel: ViewModelType {
     init() {
         self.input = Input()
         self.output = Output(
-            villainList: villainList
+            villainList: villainList, 
+            modularSetList: modularSetList
         )
     }
 }
