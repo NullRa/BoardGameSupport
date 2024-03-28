@@ -22,6 +22,7 @@
 		E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A702BAAD74B0032EE1E /* ViewModelType.swift */; };
 		E0783A732BAADD620032EE1E /* AbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A722BAADD620032EE1E /* AbsViewController.swift */; };
 		E0783A772BAC28E00032EE1E /* MarvelViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0783A762BAC28E00032EE1E /* MarvelViewTests.swift */; };
+		E09ED01F2BB556ED00E8F7CE /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09ED01E2BB556ED00E8F7CE /* ExtensionString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E0783A702BAAD74B0032EE1E /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		E0783A722BAADD620032EE1E /* AbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsViewController.swift; sourceTree = "<group>"; };
 		E0783A762BAC28E00032EE1E /* MarvelViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewTests.swift; sourceTree = "<group>"; };
+		E09ED01E2BB556ED00E8F7CE /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				E0783A6F2BAAD72D0032EE1E /* Protocol */,
 				E0783A572BAA88910032EE1E /* ViewModel */,
 				E0783A562BAA88860032EE1E /* View */,
+				E09ED01D2BB556B600E8F7CE /* Extension */,
 				E0783A372BA820CA0032EE1E /* AppDelegate.swift */,
 				E0783A392BA820CA0032EE1E /* SceneDelegate.swift */,
 				E0783A532BA830C60032EE1E /* Localizable.strings */,
@@ -153,6 +156,14 @@
 				E0783A702BAAD74B0032EE1E /* ViewModelType.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E09ED01D2BB556B600E8F7CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E09ED01E2BB556ED00E8F7CE /* ExtensionString.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		EA5DB7D70AAFC57F288C2A3E /* Frameworks */ = {
@@ -325,6 +336,7 @@
 				E0783A592BAA88DD0032EE1E /* HomeViewController.swift in Sources */,
 				E0783A5D2BAA92910032EE1E /* MarvelViewController.swift in Sources */,
 				E0783A5B2BAA90AE0032EE1E /* HomeViewModel.swift in Sources */,
+				E09ED01F2BB556ED00E8F7CE /* ExtensionString.swift in Sources */,
 				E0783A5F2BAA929F0032EE1E /* MarvelViewModel.swift in Sources */,
 				E0783A712BAAD74B0032EE1E /* ViewModelType.swift in Sources */,
 				E0783A732BAADD620032EE1E /* AbsViewController.swift in Sources */,
