@@ -14,6 +14,8 @@ class MarvelViewModel: ViewModelType {
     
     private let modularSetList = BehaviorRelay<[String]>(value: ["Bomb Scare", "Masters of Evil", "Under Attack", "Legions of Hydra", "The Doomsday Chair", "Random"])
     
+    private let villainLevelList = BehaviorRelay<[String]>(value: ["Lv1 -> Lv2", "Lv2 -> Lv3"])
+    
     private let disposeBag = DisposeBag()
     
     struct Input {}
@@ -21,6 +23,7 @@ class MarvelViewModel: ViewModelType {
     struct Output {
         let villainList: BehaviorRelay<[String]>
         let modularSetList: BehaviorRelay<[String]>
+        let villainLevelList: BehaviorRelay<[String]>
     }
     
     let input: Input
@@ -31,7 +34,8 @@ class MarvelViewModel: ViewModelType {
         self.input = Input()
         self.output = Output(
             villainList: villainList, 
-            modularSetList: modularSetList
+            modularSetList: modularSetList,
+            villainLevelList: villainLevelList
         )
     }
 }

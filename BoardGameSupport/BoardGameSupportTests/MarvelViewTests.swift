@@ -21,7 +21,8 @@ final class MarvelViewTests: XCTestCase {
     }
 
     func testVillainLevelDefault() {
-        let villainLevelDefault = ""
+        let villainLevelList = viewModel.output.villainLevelList.value
+        let villainLevelDefault = villainLevelList[0]
         XCTAssertEqual(villainLevelDefault, "Lv1 -> Lv2")
     }
     
