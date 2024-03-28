@@ -16,9 +16,9 @@ class MarvelViewModel: ViewModelType {
     
     private let villainLevelList = BehaviorRelay<[String]>(value: ["Lv1 -> Lv2", "Lv2 -> Lv3"])
     
-    private let heroList = BehaviorRelay<[String]>(value: ["Spider-Man", "Captain Marvel", "She-Hulk", "Iron Man", "Black Panther"])
+    private let heroList = BehaviorRelay<[String]>(value: ["Spider-Man", "Captain Marvel", "She-Hulk", "Iron Man", "Black Panther", "Random"])
     
-    private let heroStyleList = BehaviorRelay<[String]>(value: ["Aggression", "Leadership", "Protection", "Justice"])
+    private let heroStyleList = BehaviorRelay<[String]>(value: ["Aggression", "Leadership", "Protection", "Justice", "Random"])
     
     private let disposeBag = DisposeBag()
     
