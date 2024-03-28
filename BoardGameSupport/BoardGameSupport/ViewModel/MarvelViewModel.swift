@@ -64,7 +64,4 @@ class MarvelViewModel: ViewModelType {
             .disposed(by: self.disposeBag)
     }
     
-    func changeVillain(index: Int){
-        self.villainIndexSub.onNext(index)
-    }
 }

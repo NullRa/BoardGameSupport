@@ -45,7 +45,7 @@ final class MarvelViewTests: XCTestCase {
     }
     
     func testVillainChange(){
-        viewModel.changeVillain(index: 1)
+        viewModel.input.villainIndex.onNext(1)
         let villainList = viewModel.output.villainList.value
         let index = viewModel.output.villainIndex.value
         let villain = villainList[index]
