@@ -44,6 +44,13 @@ final class MarvelViewTests: XCTestCase {
         XCTAssertEqual(modularSet, "Bomb Scare")
     }
     
+    func testVillainChange(){
+        viewModel.changeVillain(index: 1)
+        let index = viewModel.output.villainIndex.value
+        let villain = villainList[index]
+        XCTAssertEqual(villain, "Klaw")
+    }
+    
     func testVillainDefault(){
         let villainList = viewModel.output.villainList.value
         let index = viewModel.output.villainIndex.value
