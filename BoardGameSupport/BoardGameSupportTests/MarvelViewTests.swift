@@ -22,7 +22,7 @@ final class MarvelViewTests: XCTestCase {
 
     func testHeroStyleDefault() {
         let heroStyleList = viewModel.output.heroStyleList.value
-        let heroStyleDefault = heroList[0]
+        let heroStyleDefault = heroStyleList[0]
         XCTAssertEqual(heroStyleDefault, "Aggression")
     }
     
