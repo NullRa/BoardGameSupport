@@ -10,17 +10,6 @@ import RxSwift
 import RxRelay
 
 class MarvelViewModel: ViewModelType {
-    private let villainList = BehaviorRelay<[String]>(value: ["Rhino", "Klaw", "Ultron", "Random"])
-    
-    private let modularSetList = BehaviorRelay<[String]>(value: ["Bomb Scare", "Masters of Evil", "Under Attack", "Legions of Hydra", "The Doomsday Chair", "Random"])
-    
-    private let villainLevelList = BehaviorRelay<[String]>(value: ["Lv1 -> Lv2", "Lv2 -> Lv3"])
-    
-    private let heroList = BehaviorRelay<[String]>(value: ["Spider-Man", "Captain Marvel", "She-Hulk", "Iron Man", "Black Panther", "Random"])
-    
-    private let heroStyleList = BehaviorRelay<[String]>(value: ["Aggression", "Leadership", "Protection", "Justice", "Random"])
-    
-    private let villainIndex = BehaviorRelay<Int>(value: 0)
     
     private let disposeBag = DisposeBag()
     
@@ -38,6 +27,13 @@ class MarvelViewModel: ViewModelType {
     let input: Input
     
     let output: Output
+    
+    private let villainList = BehaviorRelay<[String]>(value: ["Rhino", "Klaw", "Ultron", "Random"])
+    private let modularSetList = BehaviorRelay<[String]>(value: ["Bomb Scare", "Masters of Evil", "Under Attack", "Legions of Hydra", "The Doomsday Chair", "Random"])
+    private let villainLevelList = BehaviorRelay<[String]>(value: ["Lv1 -> Lv2", "Lv2 -> Lv3"])
+    private let heroList = BehaviorRelay<[String]>(value: ["Spider-Man", "Captain Marvel", "She-Hulk", "Iron Man", "Black Panther", "Random"])
+    private let heroStyleList = BehaviorRelay<[String]>(value: ["Aggression", "Leadership", "Protection", "Justice", "Random"])
+    private let villainIndex = BehaviorRelay<Int>(value: 0)
     
     init() {
         self.input = Input()
