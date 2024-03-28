@@ -29,13 +29,13 @@ final class MarvelViewTests: XCTestCase {
     func testModularSetDefault() {
         let modularSetList = viewModel.output.modularSetList.value
         let modularSet = modularSetList[0]
-        XCTAssertNotEqual(modularSet, nil)
+        XCTAssertEqual(modularSet, "Bomb Scare")
     }
     
     func testVillainDefault() {
         let villainList = viewModel.output.villainList.value
         let villain = villainList[0]
-        XCTAssertNotEqual(villain, nil)
+        XCTAssertEqual(villain, "Rhino")
     }
 }
 
