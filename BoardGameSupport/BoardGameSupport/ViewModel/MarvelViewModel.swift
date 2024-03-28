@@ -13,7 +13,9 @@ class MarvelViewModel: ViewModelType {
     
     private let disposeBag = DisposeBag()
     
-    struct Input {}
+    struct Input {
+        let villainIndex: AnyObserver<Int>
+    }
     
     struct Output {
         let villainList: BehaviorRelay<[String]>
@@ -35,8 +37,12 @@ class MarvelViewModel: ViewModelType {
     private let heroStyleList = BehaviorRelay<[String]>(value: ["Aggression", "Leadership", "Protection", "Justice", "Random"])
     private let villainIndex = BehaviorRelay<Int>(value: 0)
     
+    private let villainIndexSub = PublishSubject<Int>()
+    
     init() {
-        self.input = Input()
+        self.input = Input(
+            villainIndex: villainIndexSub.asObserver()
+        )
         self.output = Output(
             villainList: villainList, 
             modularSetList: modularSetList,
@@ -45,5 +51,20 @@ class MarvelViewModel: ViewModelType {
             heroStyleList: heroStyleList,
             villainIndex: villainIndex
         )
+        
+        self.binding()
+    }
+    
+    private func binding() {
+        villainIndexSub
+            .subscribe(onNext: { [weak self] index in
+                guard let self = self else { return }
+                self.villainIndex.accept(index)
+            })
+            .disposed(by: self.disposeBag)
+    }
+    
+    func changeVillain(index: Int){
+        self.villainIndexSub.onNext(index)
     }
 }
