@@ -20,8 +20,17 @@
 "Under Attack" = "大舉入侵";
 "Legions of Hydra" = "九頭蛇軍團";
 "The Doomsday Chair" = "末日王座";
-
-
+///Hero
+"Spider-Man" = "蜘蛛人";
+"Captain Marvel" = "驚奇隊長";
+"She-Hulk" = "女浩克";
+"Iron Man" = "鋼鐵人";
+"Black Panther" = "黑豹";
+///Hero Style
+"Aggression" = "進攻";
+"Leadership" = "領袖";
+"Protection" = "防護";
+"Justice" = "正義";
 
 
 
